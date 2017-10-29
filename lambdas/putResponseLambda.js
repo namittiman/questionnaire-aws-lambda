@@ -5,19 +5,22 @@ console.log('Loading function');
 const doc = require('dynamodb-doc');
 
 const dynamo = new doc.DynamoDB();
-
+var AWS = require('aws-sdk'),
+   uuid = require('uuid'),
+   documentClient = new AWS.DynamoDB.DocumentClient(); 
+   
+   
 const putResponse = (payload, callback) => {
     if (typeof payload === "string") {
         payload = JSON.parse(payload);
     }    
     
     var tableName = "responses";
-    var item = {
-        responder: payload.email,
-        Q1: payload.Q1,
-        Q2: payload.Q2,
-        Q3: payload.Q3,
-    }
+    var item = payload;
+    item['id'] = uuid.v1();
+    item['timestamp'] = Date.now();
+    item['date'] = Date();
+
     var params = {
         TableName: tableName,
         Item: item
