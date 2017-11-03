@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Can your body portray emotions as well as your face?</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 
   </head>
@@ -12,31 +14,74 @@
       <br>
       <br>
       <br>
-              <h4 class="ui centered large header">Can your body portray emotions as well as your face?</h4>
-        <br>
+      <h4 class="ui centered large header">Can your body portray emotions as well as your face?</h4>
+      <br>
 
-        <p>
+     <p>
 
-        Thank you for responding to this long research. There were three main objectives behind this task - To study whether the human body is able to convey emotions as well as the human face, To see if the recognition of a particular emotion is better than the recognition of other emotions, and To understand whether there is a correlation between the people who score high on an empathy scale & their ability to recognize emotions.
-         All the pictures were shown to you via two cues - face or body and each picture portrayed either of the following four emotions ; happiness, sadness, anger and fear. 
-         It is hypothesised that there will be a difference in the recognition of emotion via each type of cue and there will also be a difference in the recognition of different emotions. Another prediction is that the people who will score high on the empathy scale will be more accurate in in recognizing emotions in comparison to people who score low on the same.
+      Thank you for responding to this long research. There were three main objectives behind this task - To study whether the human body is able to convey emotions as well as the human face, To see if the recognition of a particular emotion is better than the recognition of other emotions, and To understand whether there is a correlation between the people who score high on an empathy scale & their ability to recognize emotions.
+      All the pictures were shown to you via two cues - face or body and each picture portrayed either of the following four emotions ; happiness, sadness, anger and fear. 
+      It is hypothesised that there will be a difference in the recognition of emotion via each type of cue and there will also be a difference in the recognition of different emotions. Another prediction is that the people who will score high on the empathy scale will be more accurate in in recognizing emotions in comparison to people who score low on the same.
 
-         In order to know the final results of the research or if you have any queries/suggestions regarding any aspect of the study, please feel free to contact me via rajikamehra24@gmail.com and I will definitely get back to you.
+      In order to know the final results of the research or if you have any queries/suggestions regarding any aspect of the study, please feel free to contact me via rajikamehra24@gmail.com and I will definitely get back to you.
 
-         Thank you.
+      Thank you.
 
-        </p>
-
-    </div>
-
-
+     </p>
+    
+         <div class="ui segment">
+                         <div class="slider">
+                         <div>
+                           <img class="ui medium rounded image" src="img/faceBodyPics/AngerFacegirl1.jpg">
+                         </div>
+                         <div>
+                           <img class="ui medium rounded image" src="img/faceBodyPics/AngerFacegirl2.jpg">
+                         </div>
+                         <div>
+                           <img class="ui medium rounded image" src="img/faceBodyPics/AngerFacegirl3.jpg">
+                         </div>
+                         <div>
+                           <img class="ui medium rounded image" src="img/faceBodyPics/AngerFacegirl4.jpg">
+                         </div>
+                         <div>
+                           <img class="ui medium rounded image" src="img/faceBodyPics/AngerFacegirl5.jpg">
+                         </div>
+                         </div>
+         </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <script>
 
-
-
+    $('.slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+   
 
     </script>
 
